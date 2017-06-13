@@ -12538,6 +12538,26 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <vertex x="-2.2" y="-2.15"/>
 </polygon>
 </package>
+<package name="CAPACITOR-2.2UF_4X5MM_JENNY">
+<wire x1="1.75" y1="-2.65" x2="-2.65" y2="-2.65" width="0.2032" layer="21"/>
+<wire x1="-2.65" y1="-2.65" x2="-2.65" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-2.65" y1="-1.1" x2="-2.65" y2="1.1" width="0.2032" layer="51"/>
+<wire x1="-2.65" y1="1.1" x2="-2.65" y2="2.65" width="0.2032" layer="21"/>
+<wire x1="-2.65" y1="2.65" x2="1.75" y2="2.65" width="0.2032" layer="21"/>
+<wire x1="2.65" y1="1.75" x2="2.65" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="2.65" y1="1.1" x2="2.65" y2="-1.1" width="0.2032" layer="51"/>
+<wire x1="2.65" y1="-1.1" x2="2.65" y2="-1.75" width="0.2032" layer="21"/>
+<wire x1="2.65" y1="-1.75" x2="1.75" y2="-2.65" width="0.2032" layer="21"/>
+<wire x1="1.75" y1="2.65" x2="2.65" y2="1.75" width="0.2032" layer="21"/>
+<wire x1="-2.2" y1="-0.95" x2="2.2" y2="-0.95" width="0.2032" layer="21" curve="133.28887"/>
+<wire x1="-2.2" y1="-0.95" x2="-2.2" y2="0.95" width="0.2032" layer="51" curve="-46.71113"/>
+<wire x1="-2.2" y1="0.95" x2="2.2" y2="0.95" width="0.2032" layer="21" curve="-133.28887"/>
+<wire x1="2.2" y1="-0.95" x2="2.2" y2="0.95" width="0.2032" layer="51" curve="46.71113"/>
+<text x="-2.74" y="2.98" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.775" y="-4.235" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="-" x="-2.2895" y="0.0035" dx="2" dy="1.6" layer="1"/>
+<smd name="+" x="2.197" y="-0.0045" dx="2" dy="1.6" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FRAME_A_L">
@@ -28288,6 +28308,15 @@ Source: www.kingbright.com</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="CAP-4X5MM" package="CAPACITOR-2.2UF_4X5MM_JENNY">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -28630,7 +28659,7 @@ Source: LITEON, LTV816.pdf</description>
 <part name="R3" library="edwinRobotics" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="LED1" library="edwinRobotics" deviceset="LED_TH/SMD" device="CHIPLED_0603"/>
 <part name="JP1" library="edwinRobotics" deviceset="JUMPER-SMT_2_NC_TRACE" device="_NO-SILK"/>
-<part name="C1" library="edwinRobotics" deviceset="CPOL-US" device="153CLV-0505"/>
+<part name="C2" library="edwinRobotics" deviceset="CPOL-US" device="CAP-4X5MM" value="2.2uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -28694,7 +28723,7 @@ Source: LITEON, LTV816.pdf</description>
 <attribute name="NAME" x="187.96" y="111.76" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="187.96" y="116.84" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="C1" gate="G$1" x="195.58" y="106.68"/>
+<instance part="C2" gate="G$1" x="195.58" y="106.68"/>
 </instances>
 <busses>
 </busses>
@@ -28791,7 +28820,7 @@ Source: LITEON, LTV816.pdf</description>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="C1" gate="G$1" pin="-"/>
+<pinref part="C2" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -28808,9 +28837,7 @@ Source: LITEON, LTV816.pdf</description>
 <net name="N$2" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<junction x="195.58" y="109.22"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<pinref part="C1" gate="G$1" pin="+"/>
+<pinref part="C2" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$3" class="0">
