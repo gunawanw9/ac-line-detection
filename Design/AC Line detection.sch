@@ -28664,13 +28664,16 @@ Source: LITEON, LTV816.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="171.196" y="6.096" size="3.81" layer="97">Ready</text>
+<text x="242.57" y="6.096" size="3.81" layer="97">V1.0</text>
+<text x="198.12" y="0.508" size="3.81" layer="97">Abhishek Nair</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-2.54" y="0"/>
 <instance part="FRAME1" gate="G$2" x="170.18" y="0"/>
 <instance part="FID1" gate="G$1" x="269.24" y="25.4"/>
 <instance part="FID2" gate="G$1" x="266.7" y="25.4"/>
-<instance part="U$1" gate="G$1" x="251.46" y="25.4"/>
+<instance part="U$1" gate="G$1" x="261.62" y="30.48"/>
 <instance part="LOGO1" gate="G$1" x="259.08" y="48.26"/>
 <instance part="B1" gate="G$1" x="104.14" y="109.22" smashed="yes">
 <attribute name="VALUE" x="109.22" y="104.14" size="1.778" layer="96"/>
