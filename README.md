@@ -3,11 +3,18 @@ The AC mains/ Zero Crossing Detection Module from Edwin Robotics is an optically
 FEATURES:
 
 AC mains detection.
+
 Zero Crossing detection.
+
 Direct operation from AC Mains voltage.
+
 High voltage isolation between input and output.
+
 Compact tiny board-20mm x 20mm
+
 Logic level compatibility
+
+
 SPECIFICATION:
 
 Input Voltage Range: 110-300 V AC
