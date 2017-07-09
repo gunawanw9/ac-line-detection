@@ -15,4 +15,4 @@ You do not have to comply with the license for elements of the material in the p
 
 Distributed as-is; no warranty is given.
 
-Team edwin Robotics
+Team Edwin Robotics
