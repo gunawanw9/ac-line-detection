@@ -15,6 +15,7 @@ The AC mains/ Zero Crossing Detection Module from Edwin Robotics is an optically
 
 
 **SPECIFICATION:**
+
 * Input Voltage Range: 110-300 V AC
 * Max. Output Voltage Range: 5V
 * Logic Interface: VCC, GND, Signal
