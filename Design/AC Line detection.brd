@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.1">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -4570,11 +4570,11 @@ design rules under a new name.</description>
 <element name="R2" library="edwinRobotics" package="R0603" value="390k" x="11.08335" y="3.3777" rot="R270"/>
 <element name="J1" library="edwinRobotics" package="1X03" value="" x="12.5033" y="15.95285"/>
 <element name="OK1" library="optocoupler" library_urn="urn:adsk.eagle:library:320" package="DIL4-SMD" package3d_urn="urn:adsk.eagle:package:21963/1" value="LTV816S" x="14.93095" y="7.496"/>
-<element name="LED1" library="edwinRobotics" package="CHIPLED_0603" value="" x="22.7" y="18.6755" rot="R90"/>
+<element name="LED1" library="edwinRobotics" package="CHIPLED_0603" value="" x="22.7" y="18.6755" rot="R270"/>
 <element name="JP1" library="edwinRobotics" package="SMT-JUMPER_2_NC_TRACE_NO-SILK" value="JUMPER-SMT_2_NC_TRACE_NO-SILK" x="23.25" y="9.3" rot="MR270"/>
 <element name="C2" library="edwinRobotics" package="CAPACITOR-2.2UF_4X5MM_JENNY" value="2.2uF" x="21.75305" y="9.424" rot="R90"/>
 <element name="JP2" library="edwinRobotics" package="SMT-JUMPER_2_NC_TRACE_NO-SILK" value="JUMPER-SMT_2_NC_TRACE_NO-SILK" x="23.25" y="13.3" rot="MR270"/>
-<element name="R3" library="edwinRobotics" package="R0603" value="" x="22.7" y="17.05" rot="R180"/>
+<element name="R3" library="edwinRobotics" package="R0603" value="100R/330R" x="22.7" y="17.05" rot="R180"/>
 <element name="U$5" library="edwinRobotics" package="MOUNTINGHOLE_3.0_PLATEDTHIN" value="MOUNTINGHOLE3.0THIN" x="22.45865" y="2.61815"/>
 <element name="U$6" library="edwinRobotics" package="MOUNTINGHOLE_3.0_PLATEDTHIN" value="MOUNTINGHOLE3.0THIN" x="22.58535" y="22.4431"/>
 <element name="U$8" library="edwinRobotics" package="W237-102" value="SCREW_TERMINALS-2P-5MM" x="14.8853" y="20.323"/>
@@ -4625,8 +4625,6 @@ design rules under a new name.</description>
 <contactref element="U$8" pad="2"/>
 <wire x1="17.3853" y1="19.053" x2="17.5833" y2="18.855" width="0.508" layer="1"/>
 <wire x1="17.5833" y1="18.855" x2="17.5833" y2="15.95285" width="0.508" layer="1"/>
-<wire x1="17.5833" y1="15.95285" x2="20.88" y2="15.95285" width="0.508" layer="1"/>
-<wire x1="20.88" y1="15.95285" x2="21.85" y2="15" width="0.508" layer="1"/>
 <wire x1="13.66095" y1="12.266" x2="12.4648" y2="12.266" width="0.508" layer="1"/>
 <wire x1="12.4648" y1="12.266" x2="12.12975" y2="12.60105" width="0.508" layer="1"/>
 <wire x1="12.12975" y1="12.60105" x2="12.12975" y2="12.9019" width="0.508" layer="1"/>
@@ -4639,12 +4637,13 @@ design rules under a new name.</description>
 <wire x1="23.25" y1="9.808" x2="23.25" y2="12.792" width="0.508" layer="16"/>
 <wire x1="23.25" y1="12.792" x2="20.74415" y2="12.792" width="0.508" layer="16"/>
 <wire x1="20.74415" y1="12.792" x2="17.5833" y2="15.95285" width="0.508" layer="16"/>
+<wire x1="21.85" y1="15" x2="18.53615" y2="15" width="0.508" layer="1"/>
+<wire x1="18.53615" y1="15" x2="17.5833" y2="15.95285" width="0.508" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="J1" pad="1"/>
 <contactref element="OK1" pad="3"/>
 <contactref element="C2" pad="-"/>
-<contactref element="LED1" pad="C"/>
 <contactref element="U$8" pad="1"/>
 <wire x1="12.3853" y1="19.053" x2="12.3853" y2="16.07085" width="0.508" layer="1"/>
 <wire x1="12.3853" y1="16.07085" x2="12.5033" y2="15.95285" width="0.508" layer="1"/>
@@ -4657,12 +4656,6 @@ design rules under a new name.</description>
 <wire x1="17" y1="9.5812" x2="16.9604" y2="9.5812" width="0.508" layer="1"/>
 <wire x1="16.20095" y1="12.266" x2="16.20095" y2="10.38025" width="0.508" layer="1"/>
 <wire x1="16.20095" y1="10.38025" x2="17" y2="9.5812" width="0.508" layer="1"/>
-<wire x1="12.3853" y1="19.053" x2="15.3323" y2="22" width="0.508" layer="1"/>
-<wire x1="15.3323" y1="22" x2="19" y2="22" width="0.508" layer="1"/>
-<wire x1="20.23730625" y1="18.7501" x2="19" y2="19.98740625" width="0.508" layer="1"/>
-<wire x1="19" y1="22" x2="19" y2="19.98740625" width="0.508" layer="1"/>
-<wire x1="21.95" y1="18.6755" x2="21.7836" y2="18.7501" width="0.508" layer="1"/>
-<wire x1="21.7836" y1="18.7501" x2="20.23730625" y2="18.7501" width="0.508" layer="1"/>
 </signal>
 <signal name="5V">
 <contactref element="R1" pad="2"/>
@@ -4671,6 +4664,11 @@ design rules under a new name.</description>
 <wire x1="17.2425" y1="13.75365" x2="15.0433" y2="15.95285" width="0.508" layer="1"/>
 <wire x1="23.55" y1="15" x2="23.55" y2="13.9955" width="0.508" layer="1"/>
 <wire x1="23.55" y1="13.9955" x2="23.30815" y2="13.75365" width="0.508" layer="1"/>
+<wire x1="23.55" y1="15" x2="23.55" y2="15.533025" width="0.254" layer="1"/>
+<wire x1="23.55" y1="15.533025" x2="22.7198" y2="16.363225" width="0.254" layer="1"/>
+<wire x1="22.7198" y1="16.363225" x2="22.7198" y2="17.9057" width="0.254" layer="1"/>
+<contactref element="LED1" pad="A"/>
+<wire x1="22.7198" y1="17.9057" x2="21.95" y2="18.6755" width="0.254" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="JP1" pad="2"/>
@@ -4681,13 +4679,6 @@ design rules under a new name.</description>
 <wire x1="21.40985" y1="11.2733" x2="21.75755" y2="11.621" width="0.508" layer="1"/>
 <wire x1="21.8965" y1="8.792" x2="20.1501" y2="10.5384" width="0.508" layer="16"/>
 <wire x1="20.1501" y1="10.5384" x2="20.1501" y2="11.2733" width="0.508" layer="16"/>
-</signal>
-<signal name="N$3">
-<contactref element="LED1" pad="A"/>
-<contactref element="R3" pad="1"/>
-<wire x1="23.3582" y1="17.1637" x2="23.55" y2="17.05" width="0.508" layer="1"/>
-<wire x1="23.45" y1="18.6755" x2="23.45" y2="17.15" width="0.508" layer="1"/>
-<wire x1="23.45" y1="17.15" x2="23.55" y2="17.05" width="0.508" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="JP2" pad="1"/>
@@ -4702,19 +4693,16 @@ design rules under a new name.</description>
 <wire x1="20.56365" y1="17.4183" x2="21.4036" y2="17.4183" width="0.508" layer="1"/>
 <wire x1="21.4036" y1="17.4183" x2="21.85" y2="17.05" width="0.508" layer="1"/>
 </signal>
+<signal name="N$3">
+<contactref element="R3" pad="1"/>
+<contactref element="LED1" pad="C"/>
+<wire x1="23.55" y1="17.05" x2="23.55" y2="18.5755" width="0.508" layer="1"/>
+<wire x1="23.55" y1="18.5755" x2="23.45" y2="18.6755" width="0.508" layer="1"/>
+</signal>
 </signals>
 <errors>
-<approved hash="19,16,be85fd1bb66b47f5"/>
-<approved hash="19,16,90d3c6ac27b18d46"/>
-<approved hash="19,16,d11d9283dca32d3d"/>
-<approved hash="19,16,a83aa1a4eb8c5012"/>
 <approved hash="19,16,21a11fb87669588c"/>
-<approved hash="19,16,359f0ca58f6aa6ac"/>
-<approved hash="19,16,2298f89efa7e2078"/>
-<approved hash="19,16,ecd3babc2751e1ce"/>
 <approved hash="19,16,279175301ac1589c"/>
-<approved hash="19,16,369f63dde312a6ac"/>
-<approved hash="19,16,2188fb8efc4e2648"/>
 <approved hash="3,16,01cbbee3ea9755bf"/>
 </errors>
 </board>

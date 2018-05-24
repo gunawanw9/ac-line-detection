@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.1">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -28841,13 +28841,13 @@ Source: LITEON, LTV816.pdf</description>
 <part name="JP1" library="edwinRobotics" deviceset="JUMPER-SMT_2_NC_TRACE" device="_NO-SILK"/>
 <part name="C2" library="edwinRobotics" deviceset="CPOL-US" device="CAP-4X5MM" value="2.2uF"/>
 <part name="JP2" library="edwinRobotics" deviceset="JUMPER-SMT_2_NC_TRACE" device="_NO-SILK"/>
-<part name="GND4" library="edwinRobotics" deviceset="GND" device=""/>
-<part name="R3" library="edwinRobotics" deviceset="R-US_" device="R0603"/>
+<part name="R3" library="edwinRobotics" deviceset="R-US_" device="R0603" value="100R/330R"/>
 <part name="U$5" library="edwinRobotics" deviceset="MOUNTINGHOLE" device="3.0THIN"/>
 <part name="U$6" library="edwinRobotics" deviceset="MOUNTINGHOLE" device="3.0THIN"/>
 <part name="GND5" library="edwinRobotics" deviceset="GND" device=""/>
 <part name="U$8" library="edwinRobotics" deviceset="SCREW_TERMINALS-2P-" device="5MM"/>
 <part name="U$7" library="edwinRobotics" deviceset="SCREW_TERMINALS-2P-" device="5MM"/>
+<part name="U$2" library="edwinRobotics" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28898,23 +28898,23 @@ Source: LITEON, LTV816.pdf</description>
 <instance part="GND3" gate="1" x="195.58" y="99.06" smashed="yes">
 <attribute name="VALUE" x="193.04" y="96.52" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="G$1" x="243.84" y="104.14" smashed="yes">
-<attribute name="NAME" x="252.984" y="103.632" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="249.555" y="99.568" size="1.778" layer="96" rot="R90"/>
+<instance part="LED1" gate="G$1" x="254" y="116.84" smashed="yes">
+<attribute name="NAME" x="256.286" y="119.634" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="259.715" y="112.268" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="JP1" gate="G$1" x="190.5" y="109.22" smashed="yes">
 <attribute name="NAME" x="187.96" y="111.76" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="187.96" y="116.84" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
 <instance part="C2" gate="G$1" x="195.58" y="106.68"/>
-<instance part="JP2" gate="G$1" x="243.84" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="241.3" y="119.38" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="236.22" y="119.38" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+<instance part="JP2" gate="G$1" x="254" y="96.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="256.54" y="99.06" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="262.636" y="127.254" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
 </instance>
-<instance part="GND4" gate="1" x="243.84" y="96.52" smashed="yes">
-<attribute name="VALUE" x="241.3" y="93.98" size="1.778" layer="96"/>
+<instance part="R3" gate="G$1" x="254" y="106.68" smashed="yes" rot="R270">
+<attribute name="NAME" x="255.524" y="105.8926" size="1.778" layer="95"/>
+<attribute name="VALUE" x="237.236" y="105.664" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="G$1" x="243.84" y="111.76" rot="R90"/>
 <instance part="U$5" gate="G$1" x="248.92" y="25.4"/>
 <instance part="U$6" gate="G$1" x="254" y="25.4"/>
 <instance part="GND5" gate="1" x="40.64" y="78.74" smashed="yes">
@@ -28925,6 +28925,9 @@ Source: LITEON, LTV816.pdf</description>
 </instance>
 <instance part="U$7" gate="G$1" x="30.48" y="116.84" smashed="yes">
 <attribute name="NAME" x="27.94" y="122.428" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="U$2" gate="G$1" x="254" y="119.38" smashed="yes">
+<attribute name="VALUE" x="252.984" y="122.936" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -29001,8 +29004,8 @@ Source: LITEON, LTV816.pdf</description>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="127" x2="243.84" y2="129.54" width="0.1524" layer="91"/>
-<label x="243.84" y="129.54" size="1.27" layer="95" xref="yes"/>
+<wire x1="254" y1="91.44" x2="251.46" y2="91.44" width="0.1524" layer="91"/>
+<label x="251.46" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <label x="45.72" y="83.82" size="1.27" layer="95" xref="yes"/>
@@ -29026,10 +29029,6 @@ Source: LITEON, LTV816.pdf</description>
 <pinref part="C2" gate="G$1" pin="-"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="U$8" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="81.28" x2="40.64" y2="81.28" width="0.1524" layer="91"/>
@@ -29045,6 +29044,10 @@ Source: LITEON, LTV816.pdf</description>
 <wire x1="38.1" y1="101.6" x2="55.88" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="5V"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="5V"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -29052,16 +29055,16 @@ Source: LITEON, LTV816.pdf</description>
 <pinref part="C2" gate="G$1" pin="+"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="1"/>
 <pinref part="R3" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>
